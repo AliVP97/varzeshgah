@@ -1,7 +1,7 @@
 import Routes from "routes";
 import { Navbar } from "components";
 
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   return (
