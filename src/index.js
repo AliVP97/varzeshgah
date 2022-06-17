@@ -12,7 +12,7 @@ import { FontawesomeProvider } from "utils/adapters";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="varzeshgah">
       <FontawesomeProvider>
         <App />
       </FontawesomeProvider>
