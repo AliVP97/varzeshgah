@@ -1,8 +1,12 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faMagnifyingGlass, faHouse } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faHouse,
+  faLocationPin,
+} from "@fortawesome/free-solid-svg-icons";
 
 const FontawesomeProvider = ({ children }) => {
-  library.add(faMagnifyingGlass, faHouse);
+  library.add(faMagnifyingGlass, faHouse, faLocationPin);
 
   return children;
 };
