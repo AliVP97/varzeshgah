@@ -2,7 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://v1.fontapi.ir/css/Yekan");
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-FD.eot");
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-FD.woff2")
+      format("woff2"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-FD.woff")
+      format("woff"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-FD.ttf")
+      format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Bold-FD.eot");
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Bold-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Bold-FD.woff2")
+      format("woff2"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Bold-FD.woff")
+      format("woff"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Bold-FD.ttf")
+      format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Thin-FD.eot");
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Thin-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Thin-FD.woff2")
+      format("woff2"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Thin-FD.woff")
+      format("woff"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Thin-FD.ttf")
+      format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Light-FD.eot");
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Light-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Light-FD.woff2")
+      format("woff2"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Light-FD.woff")
+      format("woff"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Light-FD.ttf")
+      format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Medium-FD.eot");
+  src: url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Medium-FD.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Medium-FD.woff2")
+      format("woff2"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Medium-FD.woff")
+      format("woff"),
+    url("./assets/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Medium-FD.ttf")
+      format("truetype");
+  font-weight: 500;
+}
 
 html {
   direction: rtl;
@@ -11,7 +79,7 @@ html {
 body {
   margin: 0;
   overflow: hidden;
-  font-family: "Yekan", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  font-family: Shabnam, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
