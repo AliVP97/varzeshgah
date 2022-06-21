@@ -1,64 +1,24 @@
 import { Product } from "components";
-
-const data = [
-  {
-    name: "کابرن",
-    address: "گرگان، شهید رجایی",
-    surfaceType: "چمن مصنوعی",
-    priceFrom: "۲۵۰,۰۰۰",
-    imageSrc: "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg",
-  },
-  {
-    name: "قابوس",
-    address: "گرگان، شهرک امام",
-    surfaceType: "سالن",
-    priceFrom: "۲۵۰,۰۰۰",
-    imageSrc:
-      "http://varzesh.gorgan.ir/uploads/posts/2019-05/thumbs/1558595162_20.jpg",
-  },
-  {
-    name: "آزادی شماره دو",
-    address: "گرگان، پاسداران",
-    surfaceType: "چمن مصنوعی",
-    priceFrom: "۲۵۰,۰۰۰",
-    imageSrc: "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg",
-  },
-  {
-    name: "1کابرن",
-    address: "گرگان، شهید رجایی",
-    surfaceType: "چمن مصنوعی",
-    priceFrom: "۲۵۰,۰۰۰",
-    imageSrc: "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg",
-  },
-  {
-    name: "1قابوس",
-    address: "گرگان، شهرک امام",
-    surfaceType: "سالن",
-    priceFrom: "۲۵۰,۰۰۰",
-    imageSrc:
-      "http://varzesh.gorgan.ir/uploads/posts/2019-05/thumbs/1558595162_20.jpg",
-  },
-  {
-    name: "1آزادی شماره دو",
-    address: "گرگان، پاسداران",
-    surfaceType: "چمن مصنوعی",
-    priceFrom: "۲۵۰,۰۰۰",
-    imageSrc: "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg",
-  },
-];
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    fetch("data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <div className="container overflow-y-auto">
-      {data.map((product) => (
-        <Product
-          key={product.name}
-          name={product.name}
-          address={product.address}
-          surfaceType={product.surfaceType}
-          price={product.priceFrom}
-          imageSrc={product.imageSrc}
-        />
+      {data?.map((product) => (
+        <Product data={product} />
       ))}
     </div>
   );
