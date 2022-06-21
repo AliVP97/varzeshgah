@@ -3,10 +3,12 @@ import {
   faMagnifyingGlass,
   faHouse,
   faLocationPin,
+  faStar,
+  faPercent,
 } from "@fortawesome/free-solid-svg-icons";
 
 const FontawesomeProvider = ({ children }) => {
-  library.add(faMagnifyingGlass, faHouse, faLocationPin);
+  library.add(faMagnifyingGlass, faHouse, faLocationPin, faStar, faPercent);
 
   return children;
 };
