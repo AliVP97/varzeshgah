@@ -1,0 +1,56 @@
+[
+  {
+    "name": "کابرن",
+    "address": "گرگان، شهید رجایی",
+    "rating": 4.4,
+    "surfaceType": "چمن مصنوعی",
+    "priceFrom": 250,
+    "availableSlots": 2,
+    "imageSrc": "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg"
+  },
+  {
+    "name": "قابوس",
+    "address": "گرگان، شهرک امام",
+    "rating": 4.4,
+    "surfaceType": "سالن",
+    "priceFrom": 150,
+    "availableSlots": 10,
+    "imageSrc": "http://varzesh.gorgan.ir/uploads/posts/2019-05/thumbs/1558595162_20.jpg"
+  },
+  {
+    "name": "آزادی شماره دو",
+    "address": "گرگان، پاسداران",
+    "rating": 4.4,
+    "surfaceType": "چمن مصنوعی",
+    "priceFrom": 250,
+    "availableSlots": 3,
+    "imageSrc": "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg"
+  },
+  {
+    "name": "1کابرن",
+    "address": "گرگان، شهید رجایی",
+    "rating": 4.4,
+    "surfaceType": "چمن مصنوعی",
+    "priceFrom": 250,
+    "availableSlots": 3,
+    "imageSrc": "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg"
+  },
+  {
+    "name": "1قابوس",
+    "address": "گرگان، شهرک امام",
+    "rating": 4.4,
+    "surfaceType": "سالن",
+    "priceFrom": 250,
+    "availableSlots": 3,
+    "imageSrc": "http://varzesh.gorgan.ir/uploads/posts/2019-05/thumbs/1558595162_20.jpg"
+  },
+  {
+    "name": "1آزادی شماره دو",
+    "address": "گرگان، پاسداران",
+    "rating": 4.4,
+    "surfaceType": "چمن مصنوعی",
+    "priceFrom": 250,
+    "availableSlots": 3,
+    "imageSrc": "http://varzesh.gorgan.ir/uploads/posts/2019-05/1558598741_1.jpg"
+  }
+]
