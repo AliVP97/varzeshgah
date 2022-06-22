@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Product from "./Product";
+import FilterBar from "./FilterBar";
 import { Card } from "./baseComponents";
 
-export { Navbar, Product, Card };
+export { Navbar, Product, FilterBar, Card };
