@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo from "assets/images/logo.webp";
 
@@ -14,10 +13,7 @@ const Navbar = ({ title }) => {
       </div>
       <div className="flex items-center">
         <Link to="/search" className="px-3">
-          <FontAwesomeIcon
-            className="text-white"
-            icon="fa-solid fa-magnifying-glass"
-          />
+          <i className="fa-solid fa-magnifying-glass text-white"></i>
         </Link>
       </div>
     </div>

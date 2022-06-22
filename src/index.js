@@ -7,15 +7,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
-import { FontawesomeProvider } from "utils/adapters";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter basename="varzeshgah">
-      <FontawesomeProvider>
-        <App />
-      </FontawesomeProvider>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 );

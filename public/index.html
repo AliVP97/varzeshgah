@@ -39,5 +39,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- load FontAwesome all.css -->
+    <script async defer>
+      (function () {
+        var cssMain = document.createElement("link");
+        cssMain.href = "css/all.min.css";
+        cssMain.rel = "stylesheet";
+        cssMain.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(cssMain);
+      })();
+    </script>
   </body>
 </html>

@@ -1,12 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "./index.scss";
 
 const Search = () => {
   return (
     <div className="search-page">
       <div style={{ display: "flex", columnGap: "10px", alignItems: "center" }}>
-        <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" color="white" />
+        <i className="fa-solid fa-magnifying-glass text-white"></i>
         پیش نمایش صفحه جستجو
       </div>
     </div>
