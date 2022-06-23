@@ -13,7 +13,7 @@ const Product = ({
 }) => {
   return (
     <Card className="flex flex-col bg-white shadow-xl space-y-2 divide-y">
-      <div className="container grid grid-cols-7">
+      <div className="grid grid-cols-7">
         <img
           className="col-span-2 aspect-square rounded-xl"
           src={imageSrc}
