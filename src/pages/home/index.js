@@ -18,9 +18,9 @@ const Home = () => {
   return (
     <div className="container bg-slate-900">
       <div className="h-[8rem] mx-8 relative flex justify-center items-center">
-        <i class="fa-solid fa-arrow-right absolute right-0 text-yellow-400 text-xl"></i>
+        <i className="fa-solid fa-arrow-right absolute right-0 text-yellow-400 text-xl"></i>
         <div className="flex gap-x-4">
-          <i class="fa-solid fa-location-dot text-yellow-400 text-2xl"></i>
+          <i className="fa-solid fa-location-dot text-yellow-400 text-2xl"></i>
           <p className="text-3xl text-slate-50">گرگان</p>
         </div>
       </div>
