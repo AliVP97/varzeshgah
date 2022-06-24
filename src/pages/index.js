@@ -1,4 +1,5 @@
 import Home from "./home";
+import Place from "./place";
 import Search from "./search";
 
-export { Home, Search };
+export { Home, Place, Search };

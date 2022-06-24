@@ -1,9 +1,13 @@
-import { FilterBar, Product } from "components";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import { FilterBar, Product } from "components";
 
 const Home = () => {
   const [data, setData] = useState();
   const [compactMode, setCompactMode] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("data.json", {
@@ -56,7 +60,11 @@ const Home = () => {
         <FilterBar className="sticky top-0 z-10" />
         <div className="px-4 space-y-4">
           {data?.map((product) => (
-            <Product key={product.name} data={product} />
+            <Product
+              key={product.id}
+              data={product}
+              onClick={() => navigate(String(product.id))}
+            />
           ))}
         </div>
       </div>
