@@ -35,7 +35,10 @@ const Home = () => {
         className={`relative transition-[height] py-5 mx-8 flex justify-center items-center`}
       >
         <i className="fa-solid fa-arrow-right absolute right-0 text-yellow-400 text-xl"></i>
-        <div className="flex items-center gap-x-4">
+        <div
+          className="flex items-center gap-x-4"
+          onClick={() => navigate("dataEntry")}
+        >
           <i
             style={{ fontSize: compactMode ? "1.25rem" : "1.5rem" }}
             className="fa-solid fa-location-dot pb-1 text-yellow-400 text-2xl"

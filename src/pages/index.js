@@ -1,5 +1,5 @@
 import Home from "./home";
 import Place from "./place";
-import Search from "./search";
+import DataEntry from "./dataEntry";
 
-export { Home, Place, Search };
+export { Home, Place, DataEntry };
