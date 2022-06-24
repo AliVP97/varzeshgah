@@ -10,13 +10,17 @@ const Product = ({
     availableSlots,
     imageSrc,
   },
+  ...props
 }) => {
   return (
-    <Card className="flex flex-col bg-white shadow-xl space-y-2 divide-y">
+    <Card
+      className="flex flex-col bg-white shadow-xl space-y-2 divide-y"
+      {...props}
+    >
       <div className="grid grid-cols-7">
         <img
           className="col-span-2 aspect-square rounded-xl"
-          src={imageSrc}
+          src={imageSrc[0]}
           alt="varzeshgah"
           loading="lazy"
         />
