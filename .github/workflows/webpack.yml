@@ -12,11 +12,12 @@ jobs:
           node-version: "12.x"
       - run: npm ci
       - run: npm run build
+        env:
+            CI: false
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
           target_branch: gh-pages
           build_dir: build
         env:
-          CI: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
