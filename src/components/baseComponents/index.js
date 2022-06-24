@@ -1,3 +1,4 @@
 import Card from "./Card";
+import ImageCarousel from "./ImageCarousel";
 
-export { Card };
+export { Card, ImageCarousel };
