@@ -11,7 +11,7 @@ import "./index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="varzeshgah">
+    <BrowserRouter basename={process.env.REACT_APP_BASENAME}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
