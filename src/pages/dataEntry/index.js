@@ -1,4 +1,7 @@
+import { onValue, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
+
+import { database } from "services";
 
 const { Formik, Form, Field, FieldArray } = require("formik");
 
@@ -26,7 +29,10 @@ const DataEntry = () => {
 
   const onSubmit = (values, { setSubmitting }) => {
     setTimeout(() => {
-      navigator.clipboard.writeText(JSON.stringify(values));
+      // Add a new document in collection "cities"
+      set(ref(database, "places/" + values.id), values)
+        .then((res) => alert("با موفقیت ثبت شد"))
+        .catch((error) => alert(error));
 
       setSubmitting(false);
     }, 300);
@@ -57,13 +63,7 @@ const DataEntry = () => {
             <h1>ورود داده ورزشگاه</h1>
           </div>
           <div className="flex flex-col md:grid md:grid-cols-3 w-2/3 overflow-y-auto gap-4">
-            <CustomField
-              type="number"
-              name="id"
-              enLabel="Id"
-              faLabel="شناسه"
-              readOnly
-            />
+            <CustomField type="number" name="id" enLabel="Id" faLabel="شناسه" />
             <CustomField name="name" enLabel="Name" faLabel="نام" />
             <CustomField name="address" enLabel="Address" faLabel="آدرس" />
             <CustomField
@@ -193,7 +193,7 @@ const DataEntry = () => {
                 isSubmitting ? "bg-blue-400" : "bg-green-500"
               } p-2 text-slate-800 text-xl font-extrabold`}
             >
-              {isSubmitting ? "کپی شد" : "ثبت"}
+              {isSubmitting ? "..." : "ثبت"}
             </button>
           </div>
         </Form>
