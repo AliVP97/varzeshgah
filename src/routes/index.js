@@ -30,10 +30,13 @@ const Routes = () => {
 
   return (
     <RouterRoutes>
-      <Route path="/" element={isAuth ? undefined : <Navigate to={"/login"} />}>
+      <Route path="/">
         <Route index element={<Home />} />
         <Route path=":id" element={<Place />} />
-        <Route path="dataEntry" element={<DataEntry />} />
+        <Route
+          path="dataEntry"
+          element={isAuth ? <DataEntry /> : <Navigate to={"/login"} />}
+        />
       </Route>
       <Route
         path="/login"
